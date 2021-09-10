@@ -21,12 +21,14 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	public static WebDriver driver;
 	private static Logger log=LogManager.getLogger(TestBase.class.getName());
 
-	public static String downloadPath = System.getProperty("user.dir")+"\\Downloads";
-	public static ChromeOptions chromeoption()
+	//public static String downloadPath = System.getProperty("user.dir")+"\\Downloads";
+	/*public static ChromeOptions chromeoption()
 	{
 		ChromeOptions options = new ChromeOptions();
 		HashMap<String, Object> chromeprefs = new HashMap<String, Object>();
@@ -37,8 +39,8 @@ public class TestBase {
 		options.setCapability("screenResolution", "1024x768");
 		return options;
 
-	}
-	public static FirefoxOptions firefoxoption()
+	}*/
+	/*public static FirefoxOptions firefoxoption()
 	{
 		FirefoxOptions option = new FirefoxOptions();
 		option.addPreference("browser.download.folderList", 2);
@@ -47,21 +49,23 @@ public class TestBase {
 		option.addPreference("browser.download.manager.showWhenStarting", false);
 		//option.setCapability("screenResolution", "1920x1080");
 		return option;
-	}
+	}*/
 
 	@BeforeSuite
 	@Parameters({"browser"})
 	public void startDriver(@Optional ("chrome")String browserName)
 	{
 		if (browserName.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe");
-			driver = new ChromeDriver(chromeoption());
+			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			
 			log.info("Chrome driver isintializing");
 		}
 		else if (browserName.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/Drivers/geckodriver.exe");
-			driver = new FirefoxDriver(firefoxoption());
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 			log.info("Firefox driver isintializing");
 		}
 		//driver.manage().window().setSize(new Dimension(1024, 768));

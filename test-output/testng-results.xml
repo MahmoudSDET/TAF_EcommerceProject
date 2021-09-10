@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49921" started-at="2020-07-16T17:24:23 AST" finished-at="2020-07-16T17:25:12 AST">
+  <suite started-at="2021-09-10T16:41:50 EET" name="Default suite" finished-at="2021-09-10T16:42:35 EET" duration-ms="44741">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49921" started-at="2020-07-16T17:24:23 AST" finished-at="2020-07-16T17:25:12 AST">
+    <test started-at="2021-09-10T16:41:50 EET" name="Default test" finished-at="2021-09-10T16:42:35 EET" duration-ms="44741">
       <class name="tests.E2E_Testing">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.E2E_Testing@3a3ed300]" name="startDriver" is-config="true" duration-ms="50311" started-at="2020-07-16T17:23:32 AST" finished-at="2020-07-16T17:24:23 AST">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:41:36 EET" name="startDriver" finished-at="2021-09-10T16:41:50 EET" duration-ms="13722" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,35 +18,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="Userregistersuccessfully()[pri:1, instance:tests.E2E_Testing@3a3ed300]" name="Userregistersuccessfully" duration-ms="19780" started-at="2020-07-16T17:24:23 AST" finished-at="2020-07-16T17:24:42 AST">
+        <test-method signature="Userregistersuccessfully()[pri:1, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:41:50 EET" name="Userregistersuccessfully" finished-at="2021-09-10T16:42:05 EET" duration-ms="14987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Userregistersuccessfully -->
-        <test-method status="PASS" signature="RegisteredUserCanLogout()[pri:0, instance:tests.E2E_Testing@3a3ed300]" name="RegisteredUserCanLogout" duration-ms="2498" started-at="2020-07-16T17:24:42 AST" depends-on-methods="tests.E2E_Testing.Userregistersuccessfully" finished-at="2020-07-16T17:24:45 AST">
+        <test-method signature="RegisteredUserCanLogout()[pri:0, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:42:05 EET" name="RegisteredUserCanLogout" finished-at="2021-09-10T16:42:10 EET" depends-on-methods="tests.E2E_Testing.Userregistersuccessfully" duration-ms="5125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisteredUserCanLogout -->
-        <test-method status="PASS" signature="RegisterUserCanLogin()[pri:0, instance:tests.E2E_Testing@3a3ed300]" name="RegisterUserCanLogin" duration-ms="3776" started-at="2020-07-16T17:24:45 AST" depends-on-methods="tests.E2E_Testing.RegisteredUserCanLogout" finished-at="2020-07-16T17:24:49 AST">
+        <test-method signature="RegisterUserCanLogin()[pri:0, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:42:10 EET" name="RegisterUserCanLogin" finished-at="2021-09-10T16:42:16 EET" depends-on-methods="tests.E2E_Testing.RegisteredUserCanLogout" duration-ms="5491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserCanLogin -->
-        <test-method status="PASS" signature="RegisterUserCanSelectProduct()[pri:0, instance:tests.E2E_Testing@3a3ed300]" name="RegisterUserCanSelectProduct" duration-ms="4697" started-at="2020-07-16T17:24:49 AST" depends-on-methods="tests.E2E_Testing.RegisterUserCanLogin" finished-at="2020-07-16T17:24:53 AST">
+        <test-method signature="RegisterUserCanSelectProduct()[pri:0, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:42:16 EET" name="RegisterUserCanSelectProduct" finished-at="2021-09-10T16:42:21 EET" depends-on-methods="tests.E2E_Testing.RegisterUserCanLogin" duration-ms="5015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserCanSelectProduct -->
-        <test-method status="PASS" signature="RegisterUserCanFollowCheckOutProcedure()[pri:0, instance:tests.E2E_Testing@3a3ed300]" name="RegisterUserCanFollowCheckOutProcedure" duration-ms="9571" started-at="2020-07-16T17:24:53 AST" depends-on-methods="tests.E2E_Testing.RegisterUserCanSelectProduct" finished-at="2020-07-16T17:25:03 AST">
+        <test-method signature="RegisterUserCanFollowCheckOutProcedure()[pri:0, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:42:21 EET" name="RegisterUserCanFollowCheckOutProcedure" finished-at="2021-09-10T16:42:27 EET" depends-on-methods="tests.E2E_Testing.RegisterUserCanSelectProduct" duration-ms="6731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserCanFollowCheckOutProcedure -->
-        <test-method status="PASS" signature="RegisterUserCanConfirmCheckOrderBySelectingBankWireOption()[pri:0, instance:tests.E2E_Testing@3a3ed300]" name="RegisterUserCanConfirmCheckOrderBySelectingBankWireOption" duration-ms="5556" started-at="2020-07-16T17:25:03 AST" depends-on-methods="tests.E2E_Testing.RegisterUserCanFollowCheckOutProcedure" finished-at="2020-07-16T17:25:09 AST">
+        <test-method signature="RegisterUserCanConfirmCheckOrderBySelectingBankWireOption()[pri:0, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:42:27 EET" name="RegisterUserCanConfirmCheckOrderBySelectingBankWireOption" finished-at="2021-09-10T16:42:33 EET" depends-on-methods="tests.E2E_Testing.RegisterUserCanFollowCheckOutProcedure" duration-ms="5286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserCanConfirmCheckOrderBySelectingBankWireOption -->
-        <test-method status="PASS" signature="Validateorderwasplacedfromorderhistorypage()[pri:0, instance:tests.E2E_Testing@3a3ed300]" name="Validateorderwasplacedfromorderhistorypage" duration-ms="3857" started-at="2020-07-16T17:25:09 AST" depends-on-methods="tests.E2E_Testing.RegisterUserCanConfirmCheckOrderBySelectingBankWireOption" finished-at="2020-07-16T17:25:12 AST">
+        <test-method signature="Validateorderwasplacedfromorderhistorypage()[pri:0, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:42:33 EET" name="Validateorderwasplacedfromorderhistorypage" finished-at="2021-09-10T16:42:35 EET" depends-on-methods="tests.E2E_Testing.RegisterUserCanConfirmCheckOrderBySelectingBankWireOption" duration-ms="2024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validateorderwasplacedfromorderhistorypage -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.E2E_Testing@3a3ed300]" name="stopDriver" is-config="true" duration-ms="1" started-at="2020-07-16T17:25:13 AST" finished-at="2020-07-16T17:25:13 AST">
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.E2E_Testing@28b8f98a]" started-at="2021-09-10T16:42:35 EET" name="stopDriver" finished-at="2021-09-10T16:42:35 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
