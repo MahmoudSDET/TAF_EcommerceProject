@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.E2E_Testing_Scenario">
+        <methods>
+          <include name="startDriver"/>
+          <include name="RegisterUserCanConfirmCheckOrderBySelectingBankWireOption"/>
+          <include name="stopDriver"/>
+          <include name="Userregistersuccessfully"/>
+          <include name="Validateorderwasplacedfromorderhistorypage"/>
+          <include name="RegisterUserCanLogin"/>
+          <include name="RegisterUserCanSelectProduct"/>
+          <include name="RegisteredUserCanLogout"/>
+          <include name="RegisterUserCanFollowCheckOutProcedure"/>
+        </methods>
+      </class> <!-- tests.E2E_Testing_Scenario -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

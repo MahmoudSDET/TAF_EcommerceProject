@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+<listeners>
+<listener class-name="tests.Listeners" />
+<listener class-name="resources.ExtentReporterNG" />
+</listeners>
+<parameter name="browser" value="firefox"></parameter>
+	<test name="Test">
+		<classes>
+			<class name="tests.UserRegisteration" />
+			<class name="tests.UserRegisterationDatadriven" />
+			<class name="tests.Forgetpassword" />
+			<class name="tests.SearchProductPage" />
+			<class name="tests.SearchProductPageAutoSuggest" />
+			<class name="tests.UserCancheckoutsignin" />
+			<class name="tests.Registeredusercheckout" />
+		
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
